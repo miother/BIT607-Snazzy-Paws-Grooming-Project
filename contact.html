@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Snazzy Paws Grooming in Hamilton, or ask about partnerships and endorsements.">
+    <title>Snazzy Paws Grooming | Contact</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/stylesheet.min.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- Top navigation -->
+    <header class="navbar">
+        <nav aria-label="Main">
+            <a class="nav-brand" href="index.html">
+                <img src="images/paws.jpg" alt="" width="40" height="40">
+                <span>Snazzy Paws Grooming</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Hero banner -->
+        <div class="hero">
+            <!-- Photo from Unsplash: https://unsplash.com/s/photos/dogs -->
+            <img src="images/Dog1jpg.jpg" alt="A happy dog waiting to be groomed" fetchpriority="high">
+        </div>
+
+        <!-- Introduction -->
+        <section class="section">
+            <h1>Contact us</h1>
+            <div class="notice-card">
+                <p><strong>Fill out the form below and we&rsquo;ll reply within one business day.</strong></p>
+                <ul>
+                    <li><strong>Pet owners:</strong> Need to schedule a groom or ask a question about coat care? We&rsquo;re here to help your pup look and feel their best.</li>
+                    <li><strong>Vets &amp; partners:</strong> Interested in collaborating? If you&rsquo;re a local veterinarian or business owner, we&rsquo;d love to hear from you about partnerships or professional endorsements.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact form -->
+        <section class="section">
+            <h2>Contact form</h2>
+            <p class="form-note">Fields marked <span class="required-mark" aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required.</p>
+            <form action="#" method="post">
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="first-name">First name <span class="required-mark" aria-hidden="true">*</span></label>
+                        <input type="text" id="first-name" name="firstName" autocomplete="given-name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="surname">Surname <span class="required-mark" aria-hidden="true">*</span></label>
+                        <input type="text" id="surname" name="surname" autocomplete="family-name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email address <span class="required-mark" aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="e.g. 021 123 4567">
+                    </div>
+                    <div class="form-field form-field--full">
+                        <label for="reason">Reason for contact</label>
+                        <select id="reason" name="reason">
+                            <option value="">Choose a reason</option>
+                            <option value="booking">Booking question</option>
+                            <option value="coat-care">Coat care advice</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-field form-field--full">
+                        <label for="comment">Comment <span class="required-mark" aria-hidden="true">*</span></label>
+                        <textarea id="comment" name="comment" rows="4" required></textarea>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn">Send message</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Map and partner information -->
+        <section class="section">
+            <h2 class="visually-hidden">Find us and partner with us</h2>
+            <div class="two-col">
+                <div class="info-panel">
+                    <div>
+                        <h3>Address</h3>
+                        <!-- Replace the src with your own embed code from Google Maps (Share > Embed a map) -->
+                        <iframe class="map-frame" title="Map showing the Snazzy Paws Grooming location in Hamilton, New Zealand" src="https://www.google.com/maps?q=Hamilton%2C%20New%20Zealand&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <address>
+                            Snazzy Paws Grooming<br>
+                            123 Pet Lane, Hamilton, New Zealand
+                        </address>
+                    </div>
+                </div>
+                <div class="info-panel">
+                    <div>
+                        <h3>Partner with us</h3>
+                        <p>
+                            Are you a local vet, pet shop or pet-care business? We would love to swap
+                            referrals and promote each other to local dog owners. Use the endorsement
+                            form below to get in touch.
+                        </p>
+                    </div>
+                    <div class="panel-action">
+                        <a href="#endorsements" class="btn">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Endorsements -->
+        <section class="section" id="endorsements">
+            <h2>Endorsements</h2>
+            <form action="#" method="post">
+                <div class="endorse-layout">
+                    <div class="endorse-check">
+                        <label class="check-label" for="endorse-vet">
+                            <input type="checkbox" id="endorse-vet" name="endorsement" value="veterinarian">
+                            <span>I am a local veterinarian</span>
+                        </label>
+                    </div>
+                    <div class="endorse-fields">
+                        <div class="form-grid form-grid--3">
+                            <div class="form-field">
+                                <label for="endorse-first-name">First name</label>
+                                <input type="text" id="endorse-first-name" name="endorseFirstName" autocomplete="given-name">
+                            </div>
+                            <div class="form-field">
+                                <label for="endorse-surname">Surname</label>
+                                <input type="text" id="endorse-surname" name="endorseSurname" autocomplete="family-name">
+                            </div>
+                            <div class="form-field">
+                                <label for="endorse-phone">Phone number</label>
+                                <input type="tel" id="endorse-phone" name="endorsePhone" autocomplete="tel">
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label for="endorse-comments">Comments</label>
+                            <textarea id="endorse-comments" name="endorseComments" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="endorse-actions">
+                    <a href="index.html" class="btn btn-secondary">Back to home</a>
+                    <button type="submit" class="btn">Send endorsement</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2 class="footer-title">Opening hours</h2>
+                <p>Monday to Saturday: 9:00 AM &ndash; 5:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+            <div class="footer-column">
+                <h2 class="footer-title">Location</h2>
+                <address>
+                    123 Pet Lane<br>
+                    Hamilton, New Zealand
+                </address>
+            </div>
+            <div class="footer-column">
+                <h2 class="footer-title">Contact</h2>
+                <p>Phone: <a href="tel:+6471234567">(07) 123 4567</a></p>
+                <p>Email: <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></p>
+            </div>
+            <div class="footer-column">
+                <a href="contact.html" class="btn btn-light">Contact us</a>
+                <h2 class="footer-title">Follow us</h2>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Snazzy Paws on Facebook">FB</a></li>
+                    <li><a href="#" aria-label="Snazzy Paws on Instagram">IG</a></li>
+                    <li><a href="#" aria-label="Snazzy Paws on WhatsApp">WA</a></li>
+                    <li><a href="#" aria-label="Snazzy Paws on YouTube">YT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Snazzy Paws Grooming. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

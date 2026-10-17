@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a dog grooming appointment online with Snazzy Paws Grooming in Hamilton.">
+    <title>Snazzy Paws Grooming | Booking</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='.9em'%20font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- Top navigation -->
+    <header class="navbar">
+        <nav aria-label="Main">
+            <a class="nav-brand" href="index.html">
+                <img src="images/paws.jpg" alt="" width="40" height="40">
+                <span>Snazzy Paws Grooming</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html" aria-current="page">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- Title -->
+        <section class="section booking-title">
+            <h1>Booking</h1>
+        </section>
+
+        <!-- Privacy notice -->
+        <div class="notice-banner">
+            <p>
+                We follow New Zealand&rsquo;s Privacy Act 2020, only collect the information we need,
+                and protect your details with the highest level of privacy and safety.
+            </p>
+        </div>
+
+        <form action="#" method="post" id="booking-form">
+            <!-- Owner and dog details -->
+            <section class="section">
+                <h2>Your details</h2>
+                <p class="form-note">Fields marked <span class="required-mark" aria-hidden="true">*</span><span class="visually-hidden">with an asterisk</span> are required.</p>
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="owner-name">Owner&rsquo;s name <span class="required-mark" aria-hidden="true">*</span></label>
+                        <input type="text" id="owner-name" name="ownerName" autocomplete="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="owner-email">Email address <span class="required-mark" aria-hidden="true">*</span></label>
+                        <input type="email" id="owner-email" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="dog-name">Dog&rsquo;s name <span class="required-mark" aria-hidden="true">*</span></label>
+                        <input type="text" id="dog-name" name="dogName" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="dog-breed">Dog&rsquo;s breed <span class="required-mark" aria-hidden="true">*</span></label>
+                        <input type="text" id="dog-breed" name="dogBreed" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="dog-age">Dog&rsquo;s age (years) <span class="required-mark" aria-hidden="true">*</span></label>
+                        <input type="number" id="dog-age" name="dogAge" min="0" max="30" step="1" inputmode="numeric" required>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Select services -->
+            <section class="section">
+                <h2>Select services</h2>
+                <details class="accordion" open>
+                    <summary><h3>Core grooming services</h3></summary>
+                    <fieldset class="options">
+                        <legend class="visually-hidden">Core grooming services</legend>
+                        <label class="service-option">
+                            <input type="checkbox" name="services" value="bath-brush" data-min="25" data-max="50">
+                            <span class="service-info">
+                                <span class="service-title">Bath and Brush</span>
+                                <span class="service-desc">Shampoo, blow-dry, brush-out and nail trim.</span>
+                            </span>
+                            <span class="service-price">$25&ndash;$50</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="services" value="haircut" data-min="45" data-max="85">
+                            <span class="service-info">
+                                <span class="service-title">Haircut</span>
+                                <span class="service-desc">Bath, blow-dry, haircut (breed standard or owner&rsquo;s preference) and nail trim.</span>
+                            </span>
+                            <span class="service-price">$45&ndash;$85</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="services" value="nail-trim" data-min="10" data-max="20">
+                            <span class="service-info">
+                                <span class="service-title">Nail Trim</span>
+                                <span class="service-desc">Nail trimming and, in some cases, filing.</span>
+                            </span>
+                            <span class="service-price">$10&ndash;$20</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="services" value="ear-cleaning" data-min="10" data-max="15">
+                            <span class="service-info">
+                                <span class="service-title">Ear Cleaning</span>
+                                <span class="service-desc">Gentle cleaning of ears to remove wax and debris.</span>
+                            </span>
+                            <span class="service-price">$10&ndash;$15</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="services" value="teeth-brushing" data-min="10" data-max="15">
+                            <span class="service-info">
+                                <span class="service-title">Teeth Brushing</span>
+                                <span class="service-desc">Brushing with pet-safe toothpaste.</span>
+                            </span>
+                            <span class="service-price">$10&ndash;$15</span>
+                        </label>
+                    </fieldset>
+                </details>
+                <details class="accordion" open>
+                    <summary><h3>Packages and bundles</h3></summary>
+                    <fieldset class="options">
+                        <legend class="visually-hidden">Packages and bundles</legend>
+                        <label class="service-option">
+                            <input type="checkbox" name="services" value="full-grooming-package" data-min="60" data-max="120">
+                            <span class="service-info">
+                                <span class="service-title">Full Grooming Package</span>
+                                <span class="service-desc">Bath, haircut, teeth brushing, nail trim and ear cleaning.</span>
+                            </span>
+                            <span class="service-price">$60&ndash;$120</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="services" value="senior-dog-package" data-min="40" data-max="80">
+                            <span class="service-info">
+                                <span class="service-title">Senior Dog Package</span>
+                                <span class="service-desc">Grooming tailored for older dogs, often with special handling and care.</span>
+                            </span>
+                            <span class="service-price">$40&ndash;$80</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="services" value="puppy-package" data-min="30" data-max="60">
+                            <span class="service-info">
+                                <span class="service-title">Puppy Package</span>
+                                <span class="service-desc">Introductory grooming services tailored for puppies.</span>
+                            </span>
+                            <span class="service-price">$30&ndash;$60</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="services" value="spa-package" data-min="75" data-max="150">
+                            <span class="service-info">
+                                <span class="service-title">Spa Package</span>
+                                <span class="service-desc">Bath, haircut, teeth brushing, nail trim and sometimes special scents or conditioners.</span>
+                            </span>
+                            <span class="service-price">$75&ndash;$150</span>
+                        </label>
+                    </fieldset>
+                </details>
+                <details class="accordion">
+                    <summary><h3>Add-ons &amp; speciality treatments</h3></summary>
+                    <fieldset class="options">
+                        <legend class="visually-hidden">Add-ons &amp; speciality treatments</legend>
+                        <label class="service-option">
+                            <input type="checkbox" name="services" value="de-shedding" data-min="20" data-max="40">
+                            <span class="service-info">
+                                <span class="service-title">De-shedding Treatment</span>
+                                <span class="service-desc">Special shampoo and undercoat removal, in addition to bath or haircut.</span>
+                            </span>
+                            <span class="service-price">$20&ndash;$40</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="services" value="flea-tick" data-min="15" data-max="30">
+                            <span class="service-info">
+                                <span class="service-title">Flea &amp; Tick Treatment</span>
+                                <span class="service-desc">Shampoo and preventative treatment.</span>
+                            </span>
+                            <span class="service-price">$15&ndash;$30</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="services" value="medicated-bath" data-min="20" data-max="40">
+                            <span class="service-info">
+                                <span class="service-title">Medicated Bath</span>
+                                <span class="service-desc">For pets with skin conditions requiring special shampoo.</span>
+                            </span>
+                            <span class="service-price">Additional $20&ndash;$40</span>
+                        </label>
+                        <label class="service-option">
+                            <input type="checkbox" name="services" value="special-breed-cut" data-min="0" data-max="0" data-quote="true">
+                            <span class="service-info">
+                                <span class="service-title">Special-Breed Cuts</span>
+                                <span class="service-desc">Breed-specific cuts or styling based on customer preference.</span>
+                            </span>
+                            <span class="service-price">Quoted after consultation</span>
+                        </label>
+                    </fieldset>
+                </details>
+                <details class="accordion">
+                    <summary><h3>Quick maintenance (a la carte)</h3></summary>
+                    <fieldset class="options">
+                        <legend class="visually-hidden">Quick maintenance (a la carte)</legend>
+                        <label class="service-option">
+                            <input type="checkbox" name="services" value="express-service" data-min="15" data-max="25">
+                            <span class="service-info">
+                                <span class="service-title">Express Service</span>
+                                <span class="service-desc">For dogs that need minimal grooming or a quick touch-up.</span>
+                            </span>
+                            <span class="service-price">Additional $15&ndash;$25</span>
+                        </label>
+                    </fieldset>
+                </details>
+            </section>
+
+            <!-- Date and time -->
+            <section class="section">
+                <h2>Date &amp; time</h2>
+                <div class="booking-grid">
+                    <div class="panel">
+                        <h3>Date</h3>
+                        <div class="form-field">
+                            <label for="booking-date">Preferred date <span class="required-mark" aria-hidden="true">*</span></label>
+                            <input type="date" id="booking-date" name="date" required>
+                        </div>
+                        <p class="panel-note">We are open Monday to Saturday, 9 am to 5 pm.</p>
+                    </div>
+
+                    <div class="panel">
+                        <fieldset class="time-slots">
+                            <legend>Time slot <span class="required-mark" aria-hidden="true">*</span></legend>
+                            <div class="time-grid">
+                                <div>
+                                    <input class="time-input" type="radio" id="time-0900" name="time" value="0900" required>
+                                    <label class="time-btn" for="time-0900">9:00 AM</label>
+                                </div>
+                                <div>
+                                    <input class="time-input" type="radio" id="time-1000" name="time" value="1000">
+                                    <label class="time-btn" for="time-1000">10:00 AM</label>
+                                </div>
+                                <div>
+                                    <input class="time-input" type="radio" id="time-1100" name="time" value="1100">
+                                    <label class="time-btn" for="time-1100">11:00 AM</label>
+                                </div>
+                                <div>
+                                    <input class="time-input" type="radio" id="time-1200" name="time" value="1200">
+                                    <label class="time-btn" for="time-1200">12:00 PM</label>
+                                </div>
+                                <div>
+                                    <input class="time-input" type="radio" id="time-1300" name="time" value="1300">
+                                    <label class="time-btn" for="time-1300">1:00 PM</label>
+                                </div>
+                                <div>
+                                    <input class="time-input" type="radio" id="time-1400" name="time" value="1400">
+                                    <label class="time-btn" for="time-1400">2:00 PM</label>
+                                </div>
+                                <div>
+                                    <input class="time-input" type="radio" id="time-1500" name="time" value="1500">
+                                    <label class="time-btn" for="time-1500">3:00 PM</label>
+                                </div>
+                                <div>
+                                    <input class="time-input" type="radio" id="time-1600" name="time" value="1600">
+                                    <label class="time-btn" for="time-1600">4:00 PM</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="booking-image">
+                        <img src="images/Dog1jpg.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <!-- Summary: works with or without JavaScript -->
+                    <div class="panel summary-card">
+                        <h3>Summary of services</h3>
+                        <p class="panel-note">Review your choices, then share them by email or WhatsApp.</p>
+                        <details class="summary-details">
+                            <summary class="btn">
+                                <span class="when-closed">View summary</span>
+                                <span class="when-open">Hide summary</span>
+                            </summary>
+                            <div class="summary-body">
+                                <ul class="summary-list" id="summary-services">
+                                    <li class="summary-empty">No services selected yet.</li>
+                                </ul>
+                                <p><strong>Date:</strong> <span id="summary-date">Not chosen yet</span></p>
+                                <p><strong>Time:</strong> <span id="summary-time">Not chosen yet</span></p>
+                                <p class="summary-total">
+                                    <span>Estimated total</span>
+                                    <strong id="summary-total" aria-live="polite">$0.00</strong>
+                                </p>
+                                <p class="panel-note">Prices are ranges. We will email you to confirm your time and final price.</p>
+                                <div class="share-row">
+                                    <span class="share-label">Share this summary</span>
+                                    <a class="btn btn-secondary" id="share-email" href="mailto:?subject=Snazzy%20Paws%20Grooming%20booking%20summary&amp;body=Snazzy%20Paws%20Grooming%2C%20123%20Pet%20Lane%2C%20Hamilton.%20Open%20Monday%20to%20Saturday%2C%209%20am%20to%205%20pm.">Email</a>
+                                    <a class="btn btn-secondary" id="share-whatsapp" href="https://wa.me/?text=Snazzy%20Paws%20Grooming%2C%20123%20Pet%20Lane%2C%20Hamilton.%20Open%20Monday%20to%20Saturday%2C%209%20am%20to%205%20pm." target="_blank" rel="noopener noreferrer">WhatsApp<span class="visually-hidden"> (opens in a new tab)</span></a>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Action buttons -->
+            <div class="action-bar">
+                <a href="index.html" class="btn btn-secondary">Exit</a>
+                <button type="submit" class="btn">Confirm booking</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2 class="footer-title">Opening hours</h2>
+                <p>Monday to Saturday: 9:00 AM &ndash; 5:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+            <div class="footer-column">
+                <h2 class="footer-title">Location</h2>
+                <address>
+                    123 Pet Lane<br>
+                    Hamilton, New Zealand
+                </address>
+            </div>
+            <div class="footer-column">
+                <h2 class="footer-title">Contact</h2>
+                <p>Phone: <a href="tel:+6471234567">(07) 123 4567</a></p>
+                <p>Email: <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></p>
+            </div>
+            <div class="footer-column">
+                <a href="contact.html" class="btn btn-light">Contact us</a>
+                <h2 class="footer-title">Follow us</h2>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Snazzy Paws on Facebook">FB</a></li>
+                    <li><a href="#" aria-label="Snazzy Paws on Instagram">IG</a></li>
+                    <li><a href="#" aria-label="Snazzy Paws on WhatsApp">WA</a></li>
+                    <li><a href="#" aria-label="Snazzy Paws on YouTube">YT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Snazzy Paws Grooming. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
